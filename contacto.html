@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Juan David Hernández</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">&lt;JuanDavid.dev /&gt;</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Sobre mí</a></li>
+        <li><a href="experiencia.html">Experiencia y Estudios</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" style="padding: 50px 20px;">
+    <h1>Contacto</h1>
+    <p>Canales directos de comunicación y formulario para oportunidades laborales o proyectos.</p>
+  </section>
+
+  <main class="container">
+    
+    <h2>Información de Contacto Directo</h2>
+    <div class="info-grid">
+      <div class="info-box">
+        <h3>Correo y Teléfono</h3>
+        <p><strong>Email:</strong> juandavid.dev@ucompensar.edu.co</p>
+        <p><strong>Teléfono:</strong> +57 300 123 4567</p>
+        <p><strong>Horario:</strong> Lunes a Viernes, 8:00 AM - 6:00 PM</p>
+      </div>
+
+      <div class="info-box">
+        <h3>Ubicación y Redes</h3>
+        <p><strong>Ciudad:</strong> Bogotá D.C., Colombia</p>
+        <p><strong>GitHub:</strong> github.com/juandavid-dev</p>
+        <p><strong>Modalidad:</strong> Presencial en Bogotá o 100% Remoto</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <h2>Envíame un Mensaje</h2>
+    <p>Si deseas agendar una entrevista o solicitar mi hoja de vida en PDF, completa el formulario:</p>
+
+    <form action="index.html" method="get" class="contact-form">
+      <div>
+        <label for="nombre">Nombre completo o Empresa:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Laura Martínez - Talento Humano" required>
+      </div>
+
+      <div>
+        <label for="correo">Correo electrónico de contacto:</label>
+        <input type="email" id="correo" name="correo" placeholder="laura@empresa.com" required>
+      </div>
+
+      <div>
+        <label for="telefono">Teléfono / WhatsApp (Opcional):</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+57 310 000 0000">
+      </div>
+
+      <div>
+        <label for="motivo">Asunto del mensaje:</label>
+        <select id="motivo" name="motivo">
+          <option value="vacante">Propuesta de Empleo / Entrevista</option>
+          <option value="proyecto">Desarrollo Web / Consultoría TI</option>
+          <option value="colaboracion">Colaboración Académica</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describe brevemente los detalles de la propuesta..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Enviar Formulario</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>
+      <a href="index.html">Sobre mí</a>
+      <a href="experiencia.html">Experiencia</a>
+      <a href="contacto.html">Contacto</a>
+    </p>
+    <p style="margin-top: 12px;">© 2026 Juan David Hernández Guerrero | Fundación Universitaria Compensar</p>
+  </footer>
+
+</body>
+</html>
